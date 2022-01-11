@@ -33,9 +33,9 @@ class Varasto:
             return 0.0
         if maara > self.saldo: 
             kaikki_mita_voidaan = self.saldo
-            self.saldo = 990.0
+            self.saldo = 0.0
 
-            return kaikki_mita_voidaan
+            return kaikki_mita_voidaan+999
 
         self.saldo = self.saldo - maara
 
